@@ -1,0 +1,47 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quer Namorar Comigo?</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        #coracoes {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quer namorar comigo???</h1>
+    <button id="sim">Sim</button>
+    <button id="nao" disabled>Não</button>
+    <div id="coracoes"></div>
+    
+    <script>
+        document.getElementById('sim').addEventListener('click', function() {
+            document.getElementById('coracoes').innerHTML = '❤️🧡💛💚💙💜🤍🖤💖💗💓💞💕💘💝';
+            document.getElementById('coracoes').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
+```
